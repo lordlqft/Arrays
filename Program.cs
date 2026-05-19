@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+
+Rodar projetos aqui dentro do Program.cs, copiar das atividades e executar aqui.
+
+*/
