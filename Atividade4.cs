@@ -1,25 +1,19 @@
+/* Crie um array para 4 notas (digitado pelo usuário) e calcule a média final. */
+
+
+
 /*
-double[] notasAlunos = { };
-string continuar = "s";
+double[] numeros = new double[4];
+double soma = 0;
 
-
-while (continuar == "s")
+for (int i = 0; i < 4; i++)
 {
-    Console.Write("Digite a nota do aluno: ");
-    double nota = double.Parse(Console.ReadLine()!);
-
-    notasAlunos = notasAlunos.Append(nota).ToArray();
-
-    Console.Write("Deseja continuar? (s/n): ");
-    continuar = Console.ReadLine()!.ToLower();
-
-    Console.Clear();
-    Console.WriteLine($"Notas do aluno: {string.Join(", ", notasAlunos)}");
-
-    if (continuar != "s")
-    {
-        Console.WriteLine($"Média do aluno: {notasAlunos.Average():F2}");
-        break;
-    }
+    Console.Write($"Digite o {i + 1}º número: ");
+    numeros[i] = double.Parse(Console.ReadLine()!);
+    soma += numeros[i];
 }
+
+Console.WriteLine();
+Console.WriteLine("Média do aluno:");
+Console.WriteLine(soma / 4);
 */
