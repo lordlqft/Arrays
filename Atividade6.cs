@@ -1,17 +1,35 @@
+/* Crie um array para 5 números (digitado pelo usuário) e ordene os números no array, na sequencia
+apresente os números ordenados, utilizar somente recursos explicados em aula. */
+
+
+
 /*
-string[] nomeAlunos = { };
+int[] numeros = new int[5];
+int x;
 
-while (true)
+for (int i = 0; i < 5; i++)
 {
-    Console.Write("Digite o nome do aluno (ou 'sair' para encerrar): ");
-    string nome = Console.ReadLine()!;
+    Console.Write($"Digite o {i + 1}º número: ");
+    numeros[i] = int.Parse(Console.ReadLine()!);
+}
 
-    if (nome.ToLower() == "sair")
+Console.WriteLine();
+
+for (int i = 0; i < 5; i++)
+{
+    for (int v = i + 1; v < 5; v++)
     {
-        break;
+        if (numeros[i] > numeros[v])
+        {
+            x = numeros[i];
+            numeros[i] = numeros[v];
+            numeros[v] = x;
+        }
     }
+}
 
-    nomeAlunos = nomeAlunos.Append(nome).ToArray();
-    Console.WriteLine($"Nomes dos alunos: {string.Join(", ", nomeAlunos)}");
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(numeros[i]);
 }
 */
