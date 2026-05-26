@@ -1,6 +1,25 @@
-/*
-int[] numerosInteiros = { 1, 2, 3, 4, 5 };
+/* Crie um array para 5 números (digitado pelo usuário) e mostre qual é o maior valor digitado */
 
-Console.WriteLine($"Números inteiros: {string.Join(", ", numerosInteiros)}");
-Console.WriteLine($"Maior numero: {numerosInteiros.Max()}");
+
+/*
+int[] numeros = new int[5];
+int maior;
+
+for (int i = 0; i < 5; i++)
+{
+    Console.Write($"Digite o {i + 1}º número: ");
+    numeros[i] = int.Parse(Console.ReadLine()!);
+}
+
+maior = numeros[0];
+
+for (int i = 1; i < 5; i++)
+{
+    if (numeros[i] > maior)
+    {
+        maior = numeros[i];
+    }
+}
+
+Console.WriteLine($"O maior valor digitado é: {maior}");
 */
