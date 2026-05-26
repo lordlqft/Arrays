@@ -1,8 +1,20 @@
-/*
-int[] numerosInteiros = { 1, 2, 3, 4, 5, 6 };
+/* Crie um array para 6 números inteiros (digitados pelo usuário) e exiba todos usando for . */
 
-for (int i = 0; i < numerosInteiros.Length; i++)
+
+
+/*
+int[] numeros = new int[6];
+
+for (int i = 0; i < 6; i++)
 {
-    Console.WriteLine(numerosInteiros[i]);
+    Console.Write($"Digite o {i + 1}º número: ");
+    numeros[i] = int.Parse(Console.ReadLine()!);
+}
+
+Console.WriteLine();
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine(numeros[i]);
 }
 */
