@@ -1,7 +1,19 @@
-/*
-string[] nomesAlunos = { "Kenneth", "Pedro", "João", "Rafaela", "Mariana" };
+/* Crie um array para 5 nomes de alunos (digitados pelo usuário) e exiba todos usando for. */
 
-for (int i = 0; i < nomesAlunos.Length; i++)
+
+
+/*
+string[] nomesAlunos = new string[5];
+
+for (int i = 0; i <= 5; i++)
+{
+    Console.Write($"Digite o nome do aluno {i + 1}: ");
+    nomesAlunos[i] = Console.ReadLine()!;
+}
+
+Console.WriteLine();
+
+for (int i = 0; i <= 5; i++)
 {
     Console.WriteLine(nomesAlunos[i]);
 }
